@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TimeSense
 
-## Getting Started
+A playful breathing game that tests how accurately users can feel time passing.
 
-First, run the development server:
+## Concept
+Users select a duration, start a breathing exercise with no visible timer, and stop when they believe the time is up. The app reveals how close they were.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Core Flow
+1. User selects duration (30s / 60s / 120s)
+2. User clicks Start
+3. Breathing animation runs (timer hidden)
+4. User clicks Stop when they feel time is up
+5. App shows:
+   - Target duration
+   - Actual elapsed time
+   - Offset (± seconds)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## MVP Scope
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### IN
+- Duration selector (preset buttons)
+- Start / Stop control
+- Hidden timer logic
+- Simple breathing animation
+- Offset calculation
+- Result screen
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### OUT
+- Accounts
+- Streaks
+- Leaderboards
+- Sounds
+- Payments
+- Social sharing
 
-## Learn More
+## Tone
+Playful, light, game-like — not spiritual or heavy.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Success Metric
+User completes a session and immediately retries to improve their accuracy.
