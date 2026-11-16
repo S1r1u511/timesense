@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Static export so it can be served as plain files on Cloudflare.
+  output: "export",
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

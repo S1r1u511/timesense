@@ -1,0 +1,10 @@
+{
+  // Next.js static export (out/) served as a Cloudflare Worker with static assets (embedded in Vibecade).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "timesense",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
